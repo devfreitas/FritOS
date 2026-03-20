@@ -33,9 +33,8 @@ void _start(void) {
     fb = fb_req.response->framebuffers[0];
 
     clear_screen(0x1a1a1a);
-    draw_string("BEM-VINDO AO MEU OS DE 64 BITS!", fb->width/2 - 120, fb->height/2 - 10, 0x00FF00); 
-    draw_string("A base grafica esta pronta.", fb->width/2 - 110, fb->height/2 + 10, 0xFFFFFF); 
-    draw_string("Gemini", fb->width/2 - 20, fb->height - 30, 0x0000FF);
+    draw_string("BEM-VINDO AO FritOS", fb->width/2 - 120, fb->height/2 - 10, 0x00FF00); 
+    draw_string("Testando base gráfica", fb->width/2 - 110, fb->height/2 + 10, 0xFFFFFF); 
 
     for (;;);
 }
